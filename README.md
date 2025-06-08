@@ -15,22 +15,22 @@ A Thermaplus é uma API REST desenvolvida em Java com Spring Boot que permite:
 - Paginação e filtros para listagem de localizações
 
 ## Endpoints
-Cadastro de novo usuário
-  POST	/users
-Autenticação e geração de token JWT
-  POST	/login
-Registrar nova localização
-  POST	/localizacoes
-Listar localizações do usuário
-  GET	/localizacoes
-Atualizar localização existente
-  PUT	/localizacoes/{id}
-Deletar localização
-  DELETE	/localizacoes/{id}
-Obter recomendações climáticas:
-  GET	/localizacoes/recomendacoes
-Interface Swagger (documentação):
-  GET	/swagger-ui/**
+- Cadastro de novo usuário
+```POST /users```
+- Autenticação e geração de token JWT
+  ```POST /login```
+- Registrar nova localização
+  ```POST /localizacoes```
+- Listar localizações do usuário
+  ```GET /localizacoes```
+- Atualizar localização existente
+  ```PUT /localizacoes/{id}```
+- Deletar localização
+  ```DELETE /localizacoes/{id}```
+- Obter recomendações climáticas:
+  ```GET /localizacoes/recomendacoes```
+- Interface Swagger (documentação):
+  ```GET /swagger-ui/**```
 
 ## Exemplos:
 Usuario
