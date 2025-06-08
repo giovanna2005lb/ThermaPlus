@@ -73,5 +73,4 @@ Recomendação
   "temperatura": 29.5,
   "texto": "Evite sair entre 12h e 15h. Mantenha-se hidratado!"
 }
-´´´
 
