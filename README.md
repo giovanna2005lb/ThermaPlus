@@ -3,6 +3,7 @@ API REST para gerenciamento de usuários e registro de localizações com consul
 
 ## Integrantes
 RM555679 - Lavinia Soo Hyun Park
+
 RM556242 - Giovanna Laturague Bueno
 
 ## Descrição
