@@ -12,7 +12,7 @@ A Thermaplus é uma API REST desenvolvida em Java com Spring Boot que permite:
 - Cadastro e autenticação de usuários (com JWT)
 - Registro de localizações geográficas associadas ao usuário
 - Consulta de dados meteorológicos através da integração com uma API externa
-- Geração de recomendações baseadas nas condições climáticas atuais
+- Geração de recomendações baseadas nas condições climáticas atuais, ou vindas do próprio usuário
 - Paginação e filtros para listagem de localizações
 
 ## Endpoints
@@ -32,7 +32,17 @@ A Thermaplus é uma API REST desenvolvida em Java com Spring Boot que permite:
   ```GET /localizacoes/recomendacoes```
 - Interface Swagger (documentação):
   ```GET /swagger-ui/**```
-
+- Registrar recomendação:
+  ```POST /recomendacoesusuarios```
+- Obter lista de recomendação:
+  ```GET /recomendacoesusuarios```
+- Obter minha lista de recomendação:
+  ```GET /recomendacoesusuarios/minhas```
+- Atualizar uma recomendação:
+  ```GET /recomendacoesusuarios/{id}```
+- Deletar uma recomendação:
+  ```DELETE /recomendacoesusuarios/{id}```
+  
 ## Exemplos:
 Usuario
 ```json
@@ -56,4 +66,12 @@ Localização
   "longitude": -46.633308
 }
 ```
+Recomendação
+```json
+{
+  "cidade": "São Paulo",
+  "temperatura": 29.5,
+  "texto": "Evite sair entre 12h e 15h. Mantenha-se hidratado!"
+}
+´´´
 
